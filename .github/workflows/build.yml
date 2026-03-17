@@ -28,7 +28,7 @@ jobs:
           gradle-version: '8.4'
 
       - name: 构建 Debug APK
-        run: gradle assembleDebug --no-daemon
+        run: gradle assembleDebug --no-daemon --stacktrace
         env:
           ANDROID_HOME: ${{ env.ANDROID_SDK_ROOT }}
 
